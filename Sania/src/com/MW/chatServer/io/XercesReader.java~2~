@@ -1,0 +1,45 @@
+package com.metamech.io;
+
+import java.io.*;
+
+public class XercesReader extends FilterReader {
+
+  public XercesReader(InputStream in){
+    super(new InputStreamReader(in));
+  }
+
+  private XercesReader(Reader in){
+    super(in);
+  }
+  public int read(char [] text, int offset, int length) throws IOException {
+  /*
+    if (length == 0) return 0;
+    int readInt;
+    int numRead = 0;
+    if (!in.read()){
+      readInt = this.iread();
+      if (readInt == -1) {
+        return readInt;
+      } else {
+        text[offset] = (char) readInt;
+        numRead=1;
+      }
+    }
+    for (int i = offset + numRead; i < offset + length && in.ready(); i++){
+      int readInt = this.iread();
+      if (readInt == -1) break;
+      text[i] = (char) readInt;
+      numRead++;
+    }
+    if (numRead == 0 && !in.ready()) numRead = -1;
+    else
+    System.out.println("---------------- read[" + numRead + "/" + (in.ready() ? "t" : "f") + "] " + new String(text,offset,numRead));
+    return numRead;
+    */
+    int numRead = in.read(text,offset,length);
+    System.out.println("---------------- read[" + numRead + "/" + (in.ready() ? "t" : "f") + "] " + new String(text,offset,numRead));
+    return numRead;
+
+  }
+
+}

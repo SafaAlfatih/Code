@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="dist/lib/ant.jar"/>
+	<classpathentry kind="lib" path="dist/lib/junit.jar"/>
+	<classpathentry kind="lib" path="dist/lib/optional.jar"/>
+	<classpathentry kind="lib" path="dist/lib/xerces.jar"/>
+	<classpathentry kind="lib" path="dist/Sania.jar"/>
+	<classpathentry kind="lib" path="lib/ant.jar"/>
+	<classpathentry kind="lib" path="lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/optional.jar"/>
+	<classpathentry kind="lib" path="lib/xerces.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/TimesTen/tt1122_64/lib/ttjdbc7.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

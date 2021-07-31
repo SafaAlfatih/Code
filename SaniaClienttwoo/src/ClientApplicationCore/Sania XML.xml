@@ -1,0 +1,65 @@
+connection
+<stream:stream to='localhost'/>
+registeration
+Register successfully registered 12344444444444 with password 222
+<error code='401'>  User account already exists</error>  
+ <error code='401'>  Bad user name or password</error> 
+Register successfully registered aaaaaaaaaaa>  aaaaa with password 222
+authentication
+Delivering packet: <iq type='result' id='plain_auth_0'/>
+ <error code='404'>  User not found</error>
+
+
+
+
+message :
+<message to='0922233401@localHost/Android'>
+<subject>How are you?</subject>
+<body>Hey there, just wondering how you were doing today.</body>
+</message>
+
+<message from='0922233171@localHost/Android'
+to='0922233401@localHost'
+id='messageid1'>
+<thread>threadid_01</thread>
+<subject>greeting</subject>
+<body>how are you ?</body>
+</message>
+
+<presence to='java-users@groups.sania.com/Ahmed'from='iain@shigeoka.com/work'/>
+presence:
+<presence>
+
+<presence type='unavailable'>
+<status>Gone on Vacation</status>
+</presence>
+
+<presence from='iain@shigeoka.com/home'
+to='shigeoka.com'
+type='available'>
+<status>I'm bored out of my mind, talk to me</status>
+<priority>10</priority>
+<show>chat</show>
+</presence>
+
+<presence from='0922233401@sania.com/Android'
+ to='0922233171@sania.com/Android'
+ type='subscribe'/>
+
+ <presence from='0922233171@localHost/Android'
+ to='0922233401@localHost/Android'
+ type='subscribed'/>
+
+<presence to='java-users.group@sania.com/siddiq'
+from='0922233401@sania.com/Android'/>
+
+
+
+
+
+
+<message to='java-users.group@sania.com'
+from='0922233171@sania.com/Android'
+type='groupchat'>
+<body>Hi RunningMan!</body>
+</message>
